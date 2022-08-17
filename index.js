@@ -19,4 +19,3 @@ app.use('/productos', require('./routes/productos'));
 app.listen(PORT, ()=>{
     console.log(`servidor corriendo en puerto: ${PORT}`);
 })
-
