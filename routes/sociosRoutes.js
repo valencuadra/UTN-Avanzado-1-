@@ -3,7 +3,7 @@ const router = Router();
 const { 
     loadSocios,
     addSocio
-} = require('../controllers/sociosController')
+} = require('../controllers/sociosControllers')
 
 router.get('/', loadSocios);
 router.post('/', addSocio)

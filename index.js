@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:false}));
 //Configuracion de HBS
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
-hbs.registerPartial(path.join(__dirname, 'views/partials'));
+// hbs.registerPartial(path.join(__dirname, 'views/partials'));
 
 //Routes
 app.get('/', (req, res) =>{

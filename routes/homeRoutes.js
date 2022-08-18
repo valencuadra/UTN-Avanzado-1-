@@ -2,7 +2,7 @@ const { Router } = require('express');
 const router = Router();
 const { 
     loadHome,
-} = require('../controllers/homeController')
+} = require('../controllers/homeControllers')
 
 router.get('/', loadHome);
 
