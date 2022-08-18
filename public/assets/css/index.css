@@ -10,9 +10,6 @@
     
 }
 
-.fechahora{
-    direction: rtl;
-}
 
 body{
     background-color:#E7FAD0;
@@ -63,7 +60,7 @@ nav a:hover{
 }
 
 
-/*ASTROLOGIA A DIARIO */
+
 .bodynotindex{
     background-color:linear-gradient(to bottom left,#E7FAD0, #91ff92, transparent);
     background-repeat: no-repeat;
@@ -170,94 +167,6 @@ nav a:hover{
 
 
 
-/* parte de productos y servicios */
-
-.foto1productos{
-    width: 500px;
-    align-content: center;
-    border:double;
-    border-color: #8F2173;
-    border-radius:10px;
-    border-style: solid;
-    margin-bottom:4%;
-    
-}
-
-.foto2productos{
-    width: 435px;
-    justify-content: center;
-    border:double;
-    border-color: #8F2173;
-    border-radius:10px;
-    border-style: solid;
-    margin-bottom:4%;
-}
-
-figure{
-    justify-content: center;
-}
-.mainproductos{
-    padding: 20px;
-    display: flex;
-    justify-content:space-around;
-    
-}
-
-.bodyproductos{
-    margin-left: auto;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
-}
-
-.parrafoproductos{
-    text-align: justify;
-    font-size: 18px;
-    padding: 20px;
-
-}
-
-
-.headerproductos{
-    margin-bottom: 25px;
-}
-
-.h1productos{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 45px;
-    margin-bottom: 105px;
-    margin-top: 55px;
-}
-
-.tituloproducto{
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.hrfooterproductos{
-    margin-bottom: 35px;
-    margin-top: 105px;
-}
-
-.paramasinfo{
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
-.divproductos{
-    padding: auto;
-    margin: auto;
-}
-
-.h3productos{
-    padding: 10px;
-    text-align: center;
-}
 
 
 
