@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 
 
 router.get('/nosotros', (req, res) => {
-    res.send(`Somos papafrito`)
+    res.send(`Somos papafrito!`)
 });
 
 
