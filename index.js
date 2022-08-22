@@ -8,6 +8,10 @@ const path = require('path');
 const { error } = require('console');
 
 
+const homeRouter = require('./routes/homeRouter');
+const subscribeRouter = require('./routes/subscribeRouter');
+
+
 //middlewares
 app.use(express.json());
 
@@ -15,8 +19,14 @@ app.use(express.static(path.join(__dirname,"public")));
 
 app.use(express.urlencoded({extended:false}));
 
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname,'views'));
+console.log(__dirname)
+
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 app.get('/', (req, res) => {
-    res.send('nos estamos conectando a una base de datos');
+    res.send('nos estamos conectando');
 
     });
     app.get('/', (req, res) => {
@@ -24,17 +34,17 @@ app.get('/', (req, res) => {
 
     });
 
-    app.listen(Port, ()=>{
-        console.log(`Servidor corriendo en el puerto ${Port}`);  
+    app.get('/', (req, res) =>{
+        res.send('página principal')
+        res.render('index')
     });
+    app.use('/homeRouter', homeRouter);
+    app.use('/subscribeRouter', subscribeRouter);
+
 
     app.on('error', (error) => {
         console.log(`Tenemos un error: ${error}`);  
     }); 
 
 
-    app.set('view engine', 'hbs');
-    app.set('views', path.join(__dirname,'views'));
-    console.log(__dirname)
 
-    hbs.registerPartials(path.join(__dirname, 'views/partials'));

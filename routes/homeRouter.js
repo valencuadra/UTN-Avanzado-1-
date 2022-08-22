@@ -2,12 +2,12 @@
 const { Router } = require('express');
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('./homeRouter.js', (req, res) => {
     res.send(`Buenas noches, bienvenido a nuestro club`)
 });
 
 
-router.get('/nosotros', (req, res) => {
+router.get('./subscribeRouter.js', (req, res) => {
     res.send(`Somos papafrito!`)
 });
 
