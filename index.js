@@ -10,7 +10,7 @@ const path = require("path");
 const homeRouter = require('./routes/homeRouter');
 const subscribeRouter = require('./routes/subscribeRouter');
 
- 
+
 //Middelwares
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "./public")));
@@ -26,24 +26,22 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
     });*/
 
 
+
+    
     app.get('/', (req, res) => {
-        res.render('index', {titulo:'Bienvenido a nuestra appsprint'});
+        res.render('index', {titulo:'Bienvenido a nuestra app'});
 
-    });
-
-
-    app.get('/', (req, res) =>{
-        res.render('index')
     });
     
-    app.get('/subscribe', (req, res) =>{
-        res.render('subscribe')
+    app.get('/subscribe', (req, res) => {
+        res.render('subscribe', {titulo:'Bienvenido a nuestra app'});
+
     });
-    
 
 
     app.use('/homeRouter', homeRouter);
     app.use('/subscribeRouter', subscribeRouter);
+
 
 
     /*
