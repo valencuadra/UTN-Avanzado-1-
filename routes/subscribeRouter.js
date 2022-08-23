@@ -1,5 +1,8 @@
 const { Router } = require('express');
 const router = Router();
+
+
+
 const { 
     subscribeSocio,
     selectSocio,
@@ -7,8 +10,10 @@ const {
 } = require('../controllers/subscribeController')
 
 
+
+
 router.get('/', subscribeSocio); 
-router.get('/all', selectSocio);
+router.get('/', selectSocio);
 router.post('/', crearSocio);
 
 

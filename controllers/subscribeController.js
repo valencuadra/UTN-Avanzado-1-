@@ -1,10 +1,10 @@
 const knex = require('../db/conexion');
 
-const formularioProducto = (req, res) => {
+const subscribeSocio = (req, res) => {
     res.send(`Te envío el formulario para que seas parte`)
 }
 
-const selectProducto = (req, res) => {
+const selectSocio = (req, res) => {
     knex.select('*')
     .from('subscribe')
     .then((response) => {
@@ -18,7 +18,7 @@ const selectProducto = (req, res) => {
     })
 }
 
-const crearProducto = (req, res) => {
+const crearSocio = (req, res) => {
     res.send(`Socio Confirmado`)
 }
 
